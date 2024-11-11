@@ -4,7 +4,7 @@ interface DisplayProps {
   value: string;
 }
 
-const Display: React.FC<DisplayProps> = ({ value }) => {
+export const Display: React.FC<DisplayProps> = ({ value }) => {
   return (
     <div className="display">
       {value}
@@ -12,4 +12,3 @@ const Display: React.FC<DisplayProps> = ({ value }) => {
   );
 };
 
-export default Display;
