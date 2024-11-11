@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from './Button';
+import Button from './Button';
 
 interface ButtonPanelProps {
   onButtonClick: (value: string) => void;
@@ -23,3 +23,4 @@ export const ButtonPanel: React.FC<ButtonPanelProps> = ({ onButtonClick }) => {
   );
 };
 
+export default ButtonPanel;

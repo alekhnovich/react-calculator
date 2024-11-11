@@ -1,5 +1,5 @@
 import {useState} from "react";
-import { Display } from "./Display";
+import Display from "./Display";
 import { ButtonPanel } from "./ButtonPanel";
 
 export const Calculator = () => {
@@ -7,7 +7,7 @@ export const Calculator = () => {
   const [previousValue, setPreviousValue] = useState(null);
   const [operator, setOperator] = useState(null);
 
-  const handleButtonClick = value => {
+  const handleButtonClick = (value) => {
     if(value >= 0 && value <= 9){
       setCurrentValue((prev) => (prev === '0'? value : prev + value));
     } else if (value === 'C') {

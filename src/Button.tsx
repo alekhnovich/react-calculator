@@ -5,10 +5,12 @@ interface ButtonProps {
   onClick: () => void;
 }
 
-export const Button: React.FC<ButtonProps> = ({ value, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ value, onClick }) => {
   return (
     <button onClick={onClick} className="button">
       {value}
     </button>
   );
 };
+
+export default Button;
