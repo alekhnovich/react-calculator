@@ -1,7 +1,6 @@
-import { useState } from "react";
 import { Button } from "./Button";
 
-export const ButtonPanel = () => {
+export const ButtonPanel = (onButtonClick) => {
   const buttons = [
     'C', '<-', '/', '*',
     '7', '8', '9', '-',
@@ -13,7 +12,7 @@ export const ButtonPanel = () => {
   return (
     <div>
       {buttons.map((button) => {
-        <Button key={button} value={button} onClick={pnButtonClick} />
+        <Button key={button} value={button} onClick={() => onButtonClick(button)} />
       })}
     </div>
   )
